@@ -1,19 +1,37 @@
-/* Change the sidebar color*/
-[data-testid=stSidebar] {
-  background-image: linear-gradient(#000395,#FFD4DD);
+/* =================================================================== */
+/* PORTFOLIO STREAMLIT - STYLES COMPLETS POUR TOUTES LES PAGES        */
+/* =================================================================== */
+
+/* Variables CSS globales - 4 couleurs uniquement */
+:root {
+    --beige-bg: #F5F1E6;
+    --brown-encart: #8B5E3C;
+    --brown-text: #3E2F1C;
+    --white-text: #FFFFFF;
+    --border-radius: 15px;
+    --small-radius: 8px;
+    --transition: 0.3s ease;
 }
 
-/* Style hyperlinks*/
-a{
-  display: block; 
-  color:#2e9aff !important;
-  font-weight: bold;
+/* =================================================================== */
+/* STYLES DE BASE STREAMLIT */
+/* =================================================================== */
+
+.stApp {
+    background-color: var(--beige-bg);
 }
 
-p{
-  color: white
+.main .block-container {
+    background-color: var(--beige-bg);
+    padding-top: 0rem;
 }
 
+/* Masquer les éléments Streamlit par défaut */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Styles spécifiques pour les champs de texte Streamlit */
 .st-ck {
   caret-color: black;
 }
@@ -22,57 +40,301 @@ p{
   color: black;
 }
 
-/* Style the contact form */
-input[type=message], input[type=email], input[type=text], textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    resize: vertical
+/* =================================================================== */
+/* HEADER ET NAVIGATION PRINCIPALE */
+/* =================================================================== */
+
+.discrete-header {
+    background: var(--brown-encart);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
 }
 
-/* Style the submit button with a specific background color etc */
-button[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.logo-section {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white-text);
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-button[type=submit]:hover {
-  background-color: #45a049;
+.code-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: var(--white-text);
 }
 
-/* Hide Streamlit Branding */
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
-
-
-/* Design Hyperlink */
-a:link , a:visited{
-color: blue;
-text-decoration: underline;
+.nav-links, .social-icons {
+    display: flex;
+    align-items: center;
 }
 
-a:hover,  a:active {
-color: red;
-text-decoration: underline;
+.nav-links {
+    gap: 20px;
 }
 
-.footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: #001d6c;
-color: white;
-text-align: center;
+.social-icons {
+    gap: 15px;
+}
+
+/* =================================================================== */
+/* STYLES DES LIENS ET NAVIGATION */
+/* =================================================================== */
+
+.nav-link, .social-icon {
+    color: var(--white-text) !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all var(--transition);
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-1px);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background: var(--brown-encart) !important;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+}
+
+/* États des liens - normalisation */
+.nav-link:visited, .nav-link:active, .social-icon:visited, .social-icon:active, .social-icon:focus {
+    color: var(--white-text) !important;
+    text-decoration: none !important;
+    background-color: inherit !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.github-icon, .linkedin-icon {
+    background: var(--brown-encart) !important;
+    color: var(--white-text) !important;
+}
+
+.github-icon:focus, .github-icon:active, .github-icon:visited,
+.linkedin-icon:focus, .linkedin-icon:active, .linkedin-icon:visited {
+    background: var(--brown-encart) !important;
+    color: var(--white-text) !important;
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* =================================================================== */
+/* SIDEBAR STREAMLIT */
+/* =================================================================== */
+
+.css-1d391kg, .css-1d391kg .css-1q8dd3e,
+section[data-testid="stSidebar"], section[data-testid="stSidebar"] > div {
+    background-color: var(--brown-encart) !important;
+}
+
+section[data-testid="stSidebar"] .css-1q8dd3e {
+    color: var(--white-text) !important;
+}
+
+section[data-testid="stSidebar"] a,
+section[data-testid="stSidebar"] a:hover,
+section[data-testid="stSidebar"] a:visited,
+section[data-testid="stSidebar"] a:active {
+    text-decoration: none !important;
+}
+
+/* =================================================================== */
+/* BOUTONS ET TAGS */
+/* =================================================================== */
+
+.skill-tag, .nav-button {
+    background: var(--brown-encart);
+    color: var(--white-text);
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform var(--transition);
+    display: inline-block;
+}
+
+.skill-tag {
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.nav-button {
+    padding: 12px 24px;
+    margin: 10px;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* =================================================================== */
+/* CONTENEURS PRINCIPAUX */
+/* =================================================================== */
+
+.profile-section, .competency-card, .footer-section {
+    background: var(--beige-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--brown-encart);
+    margin-bottom: 2rem;
+}
+
+.competency-card {
+    padding: 1.5rem;
+    height: 200px;
+    border-radius: 10px;
+    border-left: 4px solid var(--brown-encart);
+}
+
+/* =================================================================== */
+/* FOOTER ET FORMULAIRE DE CONTACT */
+/* =================================================================== */
+
+.footer-section {
+    background: var(--brown-encart) !important;
+    color: var(--white-text);
+}
+
+/* Styles du formulaire de contact */
+.contact-form-container {
+    background: var(--beige-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--brown-encart);
+    margin-top: 1rem;
+}
+
+.contact-form-title {
+    text-align: center;
+    color: var(--brown-text);
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    background: var(--beige-bg);
+    padding: 1rem 2rem 2rem;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid var(--brown-encart);
+    border-top: none;
+}
+
+.contact-input, .contact-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--brown-encart);
+    border-radius: 8px;
+    font-size: 16px;
+    background: var(--beige-bg);
+    color: var(--brown-text);
+}
+
+.contact-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-button {
+    width: 100%;
+    padding: 12px;
+    background: var(--brown-encart);
+    color: var(--white-text);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+/* =================================================================== */
+/* STYLES GÉNÉRAUX POUR LES LIENS SOCIAUX */
+/* =================================================================== */
+
+a.social-icon, a.social-icon:focus, a.social-icon:active, a.social-icon:visited {
+    background-color: inherit !important;
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* =================================================================== */
+/* CLASSES UTILITAIRES */
+/* =================================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-gap-20 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* =================================================================== */
+/* COULEURS ET TYPOGRAPHIE */
+/* =================================================================== */
+
+.text-brown-encart {
+    color: var(--brown-encart) !important;
+}
+
+.text-brown-text {
+    color: var(--brown-text) !important;
+}
+
+.text-white {
+    color: var(--white-text);
+}
+
+.bg-brown-encart {
+    background-color: var(--brown-encart);
+}
+
+.bg-beige {
+    background-color: var(--beige-bg);
 }
 

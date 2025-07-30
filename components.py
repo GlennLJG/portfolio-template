@@ -37,6 +37,9 @@ def render_header():
     """, unsafe_allow_html=True)
 
 def render_footer():
+    # Marge avant le footer
+    st.markdown("<div style='margin-top: 2rem;'></div>", unsafe_allow_html=True)
+    
     st.markdown("""
     <div class="footer-section text-center mb-2">
         <h3 class="text-white" style="margin-bottom: 1.5rem;">🚀 Découvrez Mon Travail</h3>

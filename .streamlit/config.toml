@@ -1,13 +1,13 @@
 [theme]
 
-# Primary accent for interactive elements
-primaryColor = '#7792E3'
+# Primary accent for interactive elements (brown-encart)
+primaryColor = '#8B5E3C'
 
-# Background color for the main content area
-backgroundColor = '#383866'
+# Background color for the main content area (beige-bg)
+backgroundColor = '#F5F1E6'
 
-# Color used for almost all text
-textColor = '#FFFFFF'
+# Color used for almost all text (brown-text)
+textColor = '#3E2F1C'
 
 # Font family for all text in the app, except code blocks
 # Accepted values (serif | sans serif | monospace) 

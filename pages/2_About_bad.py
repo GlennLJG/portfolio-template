@@ -98,7 +98,7 @@ with col_title3:
 with col_content3:
     st.markdown("""<p class="text-brown-text">Vous pouvez télécharger mon CV ou consulter l'aperçu ci-dessous.</p>""", unsafe_allow_html=True)
     
-    # Bouton de téléchargement
+    # Solution 1 : Bouton de téléchargement
     try:
         with open("images/Glenn_Grobli_CV.pdf","rb") as f:
             pdf_bytes = f.read()
@@ -124,11 +124,77 @@ with col_content3:
     
     # Affichage simple d'une image du CV
     try:
-        st.image("images/Glenn_Grobli_CV.jpg", caption="Aperçu de mon CV", use_container_width=True)
+        st.image("images/CV_apercu.jpg", caption="Aperçu de mon CV", use_container_width=True)
     except:
         st.markdown("""
         <div class="text-brown-text">
         <p>💡 <em>Ajoutez une image "CV_apercu.jpg" dans le dossier images/ pour afficher un aperçu du CV.</em></p>
+        </div>
+        """, unsafe_allow_html=True)""", unsafe_allow_html=True)
+    
+    # Solution 1 : Bouton de téléchargement
+    try:
+        with open("images/Glenn_Grobli_CV.pdf","rb") as f:
+            pdf_bytes = f.read()
+        
+        col_btn1, col_btn2, col_btn3 = st.columns([1, 2, 1])
+        with col_btn2:
+            st.download_button(
+                label="📄 Télécharger mon CV (PDF)",
+                data=pdf_bytes,
+                file_name="Glenn_Grobli_CV.pdf",
+                mime="application/pdf",
+                use_container_width=True
+            )
+    except FileNotFoundError:
+        st.markdown("""
+        <div class="text-brown-text">
+        <p>📄 CV PDF non disponible pour le moment.</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    # Espacement
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # Solution 3 : Affichage des images du CV (si disponibles)
+    try:
+        # Tentative d'affichage des images du CV
+        cv_images = ["images/CV_page1.jpg", "images/CV_page2.jpg"]
+        for i, img_path in enumerate(cv_images):
+            try:
+                st.image(img_path, caption=f"CV - Page {i+1}", use_container_width=True)
+            except:
+                # Si les images n'existent pas, on essaie encore l'iframe en dernier recours
+                if i == 0:  # Seulement pour la première tentative
+                    st.markdown("""
+                    <div class="text-brown-text">
+                    <p><em>💡 Si le PDF ne s'affiche pas, utilisez le bouton de téléchargement ci-dessus.</em></p>
+                    </div>
+                    """, unsafe_allow_html=True)
+                    
+                    # Iframe en fallback (peut être bloqué)
+                    try:
+                        with open("images/Glenn_Grobli_CV.pdf","rb") as f:
+                            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+                            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="800px" type="application/pdf"></iframe>'
+                            st.markdown(pdf_display, unsafe_allow_html=True)
+                    except:
+                        st.markdown("""
+                        <div class="text-brown-text">
+                        <p>� Pour convertir votre PDF en images JPG :</p>
+                        <ol>
+                        <li>Ouvrez votre PDF</li>
+                        <li>Exportez chaque page en JPG</li>
+                        <li>Renommez-les CV_page1.jpg, CV_page2.jpg, etc.</li>
+                        <li>Placez-les dans le dossier images/</li>
+                        </ol>
+                        </div>
+                        """, unsafe_allow_html=True)
+                break
+    except Exception as e:
+        st.markdown("""
+        <div class="text-brown-text">
+        <p>📝 Images du CV non disponibles. Utilisez le bouton de téléchargement pour accéder au CV.</p>
         </div>
         """, unsafe_allow_html=True)
 

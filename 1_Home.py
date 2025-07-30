@@ -15,6 +15,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+load_css()
+
 # CSS personnalisé pour un design moderne
 st.markdown("""
 <style>
@@ -45,19 +47,12 @@ st.markdown("""
         line-height: 1.6;
     }
     
-    .expertise-title {
-        color: var(--brown-text);
-        margin-bottom: 1rem;
-    }
-    
     .skills-section {
         text-align: center;
         margin: 2rem 0;
     }
 </style>
 """, unsafe_allow_html=True)
-
-load_css()
 
 render_header()
 
@@ -95,7 +90,7 @@ with col3:
 # ================ TAGS COMPÉTENCES ================
 st.markdown("""
 <div class="skills-section">
-    <h3 class="expertise-title">🎯 Mes Domaines d'Expertise</h3>
+    <h3 class="text-brown-text">🎯 Mes Domaines d'Expertise</h3>
     <div>
         <span class="skill-tag">🐍 Python</span>
         <span class="skill-tag">📊 Data Science</span>

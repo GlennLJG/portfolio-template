@@ -5,9 +5,9 @@
 /* Variables CSS globales - 4 couleurs uniquement */
 :root {
     --beige-bg: #F5F1E6;
-    --brown-encart: #8B5E3C;
-    --brown-text: #3E2F1C;
-    --white-text: #FFFFFF;
+    --brown-encart:  /*#5E81AC*/#8B5E3C;
+    --brown-text:  /*#162660*/#3E2F1C;
+    --white-text: /*#5E81AC*/ #FFFFFF;
     --border-radius: 15px;
     --small-radius: 8px;
     --transition: 0.3s ease;

@@ -39,7 +39,7 @@ with col4:
     st.image("images/NLP_BM25.jpg")
     st.markdown("""<p class="text-brown-text">Système de recherche et d'analyse de texte utilisant l'algorithme BM25.</p>""", unsafe_allow_html=True)
     if st.button("🔍 Voir le projet", key="project_nlp_bm25"):
-        st.switch_page("pages/7_Project_NLP_BM25.py")
+        st.switch_page("pages/Projet_NLP_TripAdvisor.py")
 
 # Espacement entre les lignes
 st.markdown("<br>", unsafe_allow_html=True)
@@ -55,7 +55,7 @@ with col2:
         st.markdown("""<div style="height: 200px; background: var(--brown-encart); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🔧</div>""", unsafe_allow_html=True)
     st.markdown("""<p class="text-brown-text">Détection automatique de défauts de soudure par vision par ordinateur.</p>""", unsafe_allow_html=True)
     if st.button("🔍 Voir le projet", key="project_cv_welding"):
-        st.switch_page("pages/4_Project_CV_Welding.py")
+        st.switch_page("pages/Projet_CV_welding.py")
 
 with col4:
     st.markdown("""<h3 class="text-brown-encart">Analyse de Données RTE</h3>""", unsafe_allow_html=True)
@@ -65,8 +65,7 @@ with col4:
         st.markdown("""<div style="height: 200px; background: var(--brown-encart); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">⚡</div>""", unsafe_allow_html=True)
     st.markdown("""<p class="text-brown-text">Analyse et visualisation de données du réseau électrique français.</p>""", unsafe_allow_html=True)
     if st.button("🔍 Voir le projet", key="project_rte_analysis"):
-        # st.switch_page("pages/Project_RTE_Analysis.py")
-        st.info("🚧 Projet en cours de documentation")
+        st.switch_page("pages/Projet_Outil_simulation.py")
 
 # Espacement entre les lignes
 st.markdown("<br>", unsafe_allow_html=True)
@@ -75,7 +74,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns([2.75, 3, 2.75])
 
 with col2:
-    st.markdown("""<h3 class="text-brown-encart" >Portfolio Web Streamlit</h3>""", unsafe_allow_html=True)
+    st.markdown("""<h3 class="text-brown-encart" >ML_comparative_study</h3>""", unsafe_allow_html=True)
     try:
         st.image("images/comparative_study.jpg")
     except:
@@ -83,6 +82,6 @@ with col2:
     st.markdown("""<p class="text-brown-text" style="text-align: center;">Développement de ce portfolio interactif avec Streamlit et déploiement cloud.</p>""", unsafe_allow_html=True)
 
     if st.button("🔍 Voir le code", key="project_portfolio"):
-            st.info("📌 Vous consultez actuellement ce projet !")
+        st.switch_page("pages/Projet_ML_comparative_study.py")
 
 render_footer()

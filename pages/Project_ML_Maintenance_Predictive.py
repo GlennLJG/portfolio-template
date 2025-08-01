@@ -5,9 +5,9 @@ from components import load_css, render_header, render_footer
 
 # Configuration de la page
 st.set_page_config(
-    page_title='À Propos - Glenn',
+    page_title='ML_maintenance_predictive',
     layout="wide",
-    page_icon='👨‍💼',
+    page_icon='📊',
     initial_sidebar_state="collapsed"
 )
 

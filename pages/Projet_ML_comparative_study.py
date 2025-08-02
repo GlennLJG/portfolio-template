@@ -18,8 +18,21 @@ load_css()
 render_header()
 col1, col2,col3 = st.columns([1, 3, 1])
 with col2:
-    st.markdown("""<h1 class="title_text">ML Comparative Study</h1>""", unsafe_allow_html=True)
-    st.image("images/comparative_study.jpg",  use_container_width=False)
+    st.markdown("""<h1 class="title_text" style="font-size: 4rem; margin-bottom: 0.5rem;">Etude comparative des modèles de ML</h1>""", unsafe_allow_html=True)
+    
+    # Tags du projet
+    st.markdown("""
+    <div>
+        <span class="skill-tag">DEAP</span>
+        <span class="skill-tag">Ensemble Learning</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Image réduite et centrée
+    col_img1, col_img2, col_img3 = st.columns([1, 6, 1])
+    with col_img2:
+        st.markdown("""<br>""", unsafe_allow_html=True)
+        st.image("images/comparative_study.jpg")
     st.markdown("""
     <div class="styled-markdown">
                 

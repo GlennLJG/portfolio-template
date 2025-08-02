@@ -18,8 +18,23 @@ load_css()
 render_header()
 col1, col2,col3 = st.columns([1, 3, 1])
 with col2:
-    st.markdown("""<h1 class="title_text">CV Welding</h1>""", unsafe_allow_html=True)
-    st.image("images/CV_welding.jpg",  use_container_width=False)
+    st.markdown("""<h1 class="title_text" style="font-size: 4rem; margin-bottom: 0.5rem;">Computer Vision pour évaluer la qualité des soudures</h1>""", unsafe_allow_html=True)
+    
+    # Tags du projet
+    st.markdown("""
+    <div>
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">YOLO</span>
+        <span class="skill-tag">PowerBI</span>
+        <span class="skill-tag">DETR</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Image réduite et centrée
+    col_img1, col_img2, col_img3 = st.columns([1, 6, 1])
+    with col_img2:
+        st.markdown("""<br>""", unsafe_allow_html=True)
+        st.image("images/CV_welding.jpg")
     st.markdown("""
     <div class="styled-markdown">
                 

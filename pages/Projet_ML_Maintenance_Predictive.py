@@ -16,10 +16,24 @@ load_css()
 
 # Rendu du header avec navigation
 render_header()
-col1, col2,col3 = st.columns([1, 3, 1])
+col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
-    st.markdown("""<h1 class="title_text">ML Maintenance Prédictive</h1>""", unsafe_allow_html=True)
-    st.image("images/ML_maintenance_predictive.jpg",  use_container_width=False)
+    st.markdown("""<h1 class="title_text" style="font-size: 4rem; margin-bottom: 0.5rem;">ML pour la maintenance prédictive</h1>""", unsafe_allow_html=True)
+    
+    # Tags du projet
+    st.markdown("""
+    <div>
+        <span class="skill-tag">Ensemble Learning</span>
+        <span class="skill-tag">Imbalanced Data</span>
+        <span class="skill-tag">Time Series</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Image réduite et centrée
+    col_img1, col_img2, col_img3 = st.columns([1, 6, 1])
+    with col_img2:
+        st.markdown("""<br>""", unsafe_allow_html=True)
+        st.image("images/ML_maintenance_predictive.jpg")
     st.markdown("""
     <div class="styled-markdown">
                 

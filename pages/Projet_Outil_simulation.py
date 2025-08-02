@@ -18,8 +18,22 @@ load_css()
 render_header()
 col1, col2,col3 = st.columns([1, 3, 1])
 with col2:
-    st.markdown("""<h1 class="title_text">Outil de Simulation</h1>""", unsafe_allow_html=True)
-    st.image("images/outil_simu.jpg",  use_container_width=False)
+    st.markdown("""<h1 class="title_text" style="font-size: 4rem; margin-bottom: 0.5rem;">Développement d'un ETL selon les besoins métiers</h1>""", unsafe_allow_html=True)
+    
+    # Tags du projet
+    st.markdown("""
+    <div>
+        <span class="skill-tag">Data</span>
+        <span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">Dev</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Image réduite et centrée
+    col_img1, col_img2, col_img3 = st.columns([1, 6, 1])
+    with col_img2:
+        st.markdown("""<br>""", unsafe_allow_html=True)
+        st.image("images/outil_simu.jpg")
     st.markdown("""
     <div class="styled-markdown">
                 

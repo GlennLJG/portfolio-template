@@ -406,6 +406,7 @@ a.social-icon, a.social-icon:focus, a.social-icon:active, a.social-icon:visited 
 
 .styled-markdown {
     color: var(--color_text_on_background) !important;
+    text-align: justify !important;
 }
 
 /* Titres H1 */
@@ -450,6 +451,7 @@ a.social-icon, a.social-icon:focus, a.social-icon:active, a.social-icon:visited 
     font-size: 1.1rem !important;
     line-height: 1.6 !important;
     margin-bottom: 1rem !important;
+    text-align: justify !important;
 }
 
 /* Citations de code */
@@ -465,10 +467,12 @@ a.social-icon, a.social-icon:focus, a.social-icon:active, a.social-icon:visited 
 .styled-markdown ul, .styled-markdown ol {
     color: var(--color_text_on_background) !important;
     margin-bottom: 1rem !important;
+    text-align: justify !important;
 }
 
 .styled-markdown li {
     margin-bottom: 0.3rem !important;
+    text-align: justify !important;
 }
 
 /* Liens */

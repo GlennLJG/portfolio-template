@@ -57,7 +57,7 @@ def render_footer():
     with col2:
         st.markdown("""
         <div class="contact-form-container">
-            <h4 class="title_text">📨 Formulaire de Contact</h4>
+            <h4 class="title_text" style="text-align: center;">📨 Formulaire de Contact</h4>
         </div>
         """, unsafe_allow_html=True)
         

@@ -38,12 +38,12 @@ st.markdown("""
     }
     
     .competency-card h4 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
     }
     
     .competency-card p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 1.6;
     }
     
@@ -102,14 +102,7 @@ with col3:
     """, unsafe_allow_html=True)
 
 # ================ 3 ENCARTS COMPÉTENCES ================
-st.markdown("""
-<div style="margin: 3rem 0 2rem 0;">
-    <h3 class="title_text" style="text-align: center; margin-bottom: 2rem;">
-        💎 Mes Atouts
-    </h3>
-</div>
-""", unsafe_allow_html=True)
-
+st.markdown("<br>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3, gap="medium")
 
 with col1:
@@ -130,7 +123,7 @@ with col1:
 with col2:
     st.markdown("""
     <div class="competency-card">
-        <h4 class="title_text">💼 Expérience</h4>
+        <h4 class="title_text">💼 Expérience professionnelle</h4>
         <p class="text_on_background">
             <strong>RTE</strong> : Data Scientist Junior (<em>Alternance de 2 ans</em>)<br>
             • Développement d'un ETL<br>

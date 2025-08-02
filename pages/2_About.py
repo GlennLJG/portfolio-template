@@ -25,10 +25,11 @@ st.markdown("""
     .centered-title {
         text-align: center !important;
     }
-    .text-brown-text {
+    .text_on_background {
         font-size: 1.3rem !important;
         line-height: 1.7 !important;
     }
+    
 </style>
 """, unsafe_allow_html=True)
 
@@ -39,7 +40,7 @@ render_header()
 col1, col2, col3 = st.columns([1, 3, 1])
 
 with col2:
-    st.markdown("""<h1 class="text-brown-encart centered-title">👨‍💼 À Propos de Moi</h1>""", unsafe_allow_html=True)
+    st.markdown("""<h1 class="title_text centered-title">À Propos de Moi</h1>""", unsafe_allow_html=True)
 
 # Espacement
 st.markdown("<br><br>", unsafe_allow_html=True)
@@ -48,11 +49,11 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 col_title1, col_content1 = st.columns([1, 4])
 
 with col_title1:
-    st.markdown("""<div class="title-section"><h2 class="text-brown-encart">Background</h2></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="title-section"><h2 class="title_text">Background</h2></div>""", unsafe_allow_html=True)
 
 with col_content1:
     st.markdown("""
-    <div class="text-brown-text">
+    <div class="text_on_background">
     <div style="height: 5px;"></div>
     Je suis diplômé d'une école d'ingénieur généraliste avec une majeure en intelligence artificielle. Passionné par la logique de la programmation et fasciné par les possibilités qu'offre l'IA, je me suis naturellement orienté vers ce domaine innovant, au cœur des mutations technologiques actuelles.
     
@@ -72,11 +73,11 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 col_title2, col_content2 = st.columns([1, 4])
 
 with col_title2:
-    st.markdown("""<div class="title-section"><h2 class="text-brown-encart">Formation</h2></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="title-section"><h2 class="title_text">Formation</h2></div>""", unsafe_allow_html=True)
 
 with col_content2:
     st.markdown("""
-    <div class="text-brown-text">
+    <div class="text_on_background">
     <div style="height: 5px;"></div>
                 
     **2020-2025** : Cursus Ingénieur, ESILV, La Défense
@@ -93,10 +94,10 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 col_title3, col_content3,_ = st.columns([1, 3, 1])
 
 with col_title3:
-    st.markdown("""<div class="title-section"><h2 class="text-brown-encart">📄 Mon CV</h2></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="title-section"><h2 class="title_text">📄 Mon CV</h2></div>""", unsafe_allow_html=True)
 
 with col_content3:
-    st.markdown("""<p class="text-brown-text">Vous pouvez télécharger mon CV ou consulter l'aperçu ci-dessous.</p>""", unsafe_allow_html=True)
+    st.markdown("""<p class="text_on_background">Vous pouvez télécharger mon CV ou consulter l'aperçu ci-dessous.</p>""", unsafe_allow_html=True)
     
     # Bouton de téléchargement
     try:
@@ -114,7 +115,7 @@ with col_content3:
             )
     except FileNotFoundError:
         st.markdown("""
-        <div class="text-brown-text">
+        <div class="text_on_background">
         <p>📄 CV PDF non disponible pour le moment.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -127,7 +128,7 @@ with col_content3:
         st.image("images/Glenn_Grobli_CV.jpg", caption="Aperçu de mon CV", use_container_width=True)
     except:
         st.markdown("""
-        <div class="text-brown-text">
+        <div class="text_on_background">
         <p>💡 <em>Ajoutez une image "CV_apercu.jpg" dans le dossier images/ pour afficher un aperçu du CV.</em></p>
         </div>
         """, unsafe_allow_html=True)

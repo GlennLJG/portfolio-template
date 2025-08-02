@@ -18,10 +18,10 @@ load_css()
 render_header()
 col1, col2,col3 = st.columns([1, 3, 1])
 with col2:
-    st.markdown("""<h1 class="text-brown-encart">NLP TripAdvisor</h1>""", unsafe_allow_html=True)
+    st.markdown("""<h1 class="title_text">NLP TripAdvisor</h1>""", unsafe_allow_html=True)
     st.image("images/NLP_BM25.jpg",  use_container_width=False)
     st.markdown("""
-    <div class="text-brown-encart">
+    <div class="styled-markdown">
                 
     ### 🎯 Contexte & Objectif
     #### · Présentation du problème

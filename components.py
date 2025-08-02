@@ -13,13 +13,13 @@ def render_header():
     st.markdown(f"""
     <div class="discrete-header">
         <div class="logo-section">
-            <span class="code-icon">💻</span>
+            <img src="data:image/png;base64,{get_base64_image('images/logo.png')}" class="logo-image" alt="Logo">
             <span>{info['Full_Name']}</span>
         </div>
         <div class="nav-links">
             <a href="/" class="nav-link" target="_self">🏠 Accueil</a>
-            <a href="/About" class="nav-link" target="_self">👨‍💼 À Propos</a>
             <a href="/Projects" class="nav-link" target="_self">📁 Projets</a>
+            <a href="/About" class="nav-link" target="_self">👨‍💼 À Propos</a>
         </div>
         <div class="social-icons">
             <a href="{info['GitHub']}" class="social-icon github-icon" target="_blank" title="GitHub">
@@ -42,11 +42,11 @@ def render_footer():
     
     st.markdown("""
     <div class="footer-section text-center mb-2">
-        <h3 class="text-white" style="margin-bottom: 1.5rem;">🚀 Découvrez Mon Travail</h3>
+        <h3 class="text_on_encart" style="margin-bottom: 1.5rem;">🚀 Découvrez Mon Travail</h3>
         <div class="flex-center flex-gap-20">
             <a href="/" class="nav-link" target="_self">🏠 Accueil</a>
-            <a href="/About" class="nav-link" target="_self">👨‍💼 À Propos</a>
             <a href="/Projects" class="nav-link" target="_self">📁 Projets</a>
+            <a href="/About" class="nav-link" target="_self">👨‍💼 À Propos</a>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -57,7 +57,7 @@ def render_footer():
     with col2:
         st.markdown("""
         <div class="contact-form-container">
-            <h4 class="contact-form-title" style="color: var(--brown-encart);">📨 Formulaire de Contact</h4>
+            <h4 class="title_text">📨 Formulaire de Contact</h4>
         </div>
         """, unsafe_allow_html=True)
         
@@ -71,3 +71,13 @@ def render_footer():
         </form>
         """
         st.markdown(contact_form, unsafe_allow_html=True)
+
+def get_base64_image(image_path):
+    """Convertit une image en base64 pour l'affichage HTML"""
+    import base64
+    try:
+        with open(image_path, "rb") as img_file:
+            return base64.b64encode(img_file.read()).decode()
+    except FileNotFoundError:
+        # Fallback vers l'emoji si l'image n'existe pas
+        return None

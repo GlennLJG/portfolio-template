@@ -78,11 +78,11 @@ with col3:
     # Section texte
     st.markdown("""
         <div class="profile-section">
-            <h2 class="title_text"> Hello, Je m'appelle Glenn </h2>
-            <h3 class="text_on_background">Je suis un ingénieur Data/IA basé à Paris.</h3>
+            <h2 class="title_text"> Bonjour, Je m'appelle Glenn </h2>
+            <h3 class="text_on_background">Ingénieur Data Science et Machine Learning basé à Paris.</h3>
             <p class="text_on_background">
-            Fort de deux ans d’alternance en tant que Data Scientist Junior, je m’intéresse à l’ensemble des problématiques IA.<br>
-            Je me suis particulièrement spécialisé en machine learning, que j’ai approfondi au travers de projets concrets.
+            Passionné par le potentiel de l’IA, je me suis spécialisé en machine learning à travers des projets académiques et personnels concrets. <br>
+            Parallèlement, j’ai acquis de solides compétences en analyse et traitement de données au cours de mes deux années d’alternance en tant que Data Scientist.
             </p>
         </div>
     """, unsafe_allow_html=True)
@@ -111,11 +111,11 @@ with col1:
         <h4 class="title_text">🧰 Stack Technique</h4>
         <p class="text_on_background">
             <strong>Python :</strong>
-            Pandas, Scikit-learn, NumPy, TensorFlow, PyTorch<br>
+            Pandas, Scikit-learn, NumPy, PyTorch, Streamlit<br>
             <strong>Languages :</strong>
-            SQL, C#, C++, Bash<br>
+            SQL, C#, C++, Bash, Scala<br>
             <strong>Outils :</strong>
-            Git, Docker, Power BI
+            Git, Docker, Power BI, Tableau, Spark
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -125,9 +125,9 @@ with col2:
     <div class="competency-card">
         <h4 class="title_text">💼 Expérience professionnelle</h4>
         <p class="text_on_background">
-            <strong>RTE</strong> : Data Scientist Junior (<em>Alternance de 2 ans</em>)<br>
-            • Développement d'un ETL<br>
-            • Mise en œuvre de scénarios de simulation<br>
+            <strong>RTE</strong> : Data Scientist (<em>Alternance de 2 ans</em>)<br>
+            • Développement d’un outil Python ETL automatisé pour un SI complexe
+            • Mise en œuvre de simulations pour la formation d'opérateurs<br>
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -137,12 +137,12 @@ with col3:
     <div class="competency-card">
         <h4 class="title_text">🤝 Soft Skills</h4>
         <p class="text_on_background">
-            <strong>Management :</strong>
-            Gestion de projet, Agile Scrum<br>
-            <strong>Créativité :</strong>
-            Design Thinking, Inventivité<br>
-            <strong>Collaboration :</strong>
-            Travail d'équipe
+            <strong>Travail d'équipe :</strong>
+            +20 projets en groupes de 3-6 personnes<br>
+            <strong>Gestion de projet :</strong>
+            Autonomie, Adaptation<br>
+            <strong>Certifications :</strong>
+            Agile Scrum, Design Thinking
         </p>
     </div>
     """, unsafe_allow_html=True)

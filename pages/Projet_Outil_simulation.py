@@ -65,7 +65,8 @@ with col2:
     - **API REST** à l'aide de requêtes HTTP.  
     - **Data lake** de l'entreprise via des requêtes SQL, puis export des vues en utilisant pyarrow via une API.  
     - **Outil de production** par extraction manuelle de fichiers `.xml`, nécessitant une conversion en tables respectant l'architecture d'origine.  
-    Les jeux de données sont ensuite chargés dans des DataFrame pandas et nettoyés pour optimiser leur exploitation.
+                
+        Les jeux de données sont ensuite chargés dans des DataFrame pandas et nettoyés pour optimiser leur exploitation.
 
     #### · Feature engineering
     Le projet requiert de nombreuses transformations de données pour satisfaire les contraintes des outils SI, conçus pour la production :  
@@ -91,8 +92,9 @@ with col2:
     - Bibliothèque utilitaire regroupant les fonctions communes.  
     - Fichiers `requirements.txt` pour gérer les dépendances.  
     - Suite de tests unitaires garantissant la robustesse du code.  
-    - Dossier des pages Streamlit composant l'interface.  
-    Le projet est versionné avec **Git** et documenté par un guide d'utilisation détaillé.
+    - Dossier des pages Streamlit composant l'interface.   
+                         
+        Le projet est versionné avec **Git** et documenté par un guide d'utilisation détaillé.
     ---
 
     ### 💡 Ce que j'ai appris

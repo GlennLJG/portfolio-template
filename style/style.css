@@ -405,96 +405,109 @@ a.social-icon, a.social-icon:focus, a.social-icon:active, a.social-icon:visited 
 /* =================================================================== */
 
 .styled-markdown {
-    color: var(--color_text_on_background) !important;
-    text-align: justify !important;
+    color: var(--color_text_on_background);
+    text-align: justify;
+    font-weight: normal;
 }
 
-/* Titres H1 */
-.styled-markdown h1 {
-    color: var(--color_title) !important;
-    font-size: 2.5rem !important;
-    font-weight: bold !important;
-    margin-bottom: 1rem !important;
-    margin-top: 2rem !important;
-}
-
-/* Titres H2 */
-.styled-markdown h2 {
-    color: var(--color_title) !important;
-    font-size: 2rem !important;
-    font-weight: bold !important;
-    margin-bottom: 0.8rem !important;
-    margin-top: 1.5rem !important;
-}
-
-/* Titres H3 */
-.styled-markdown h3 {
-    color: var(--color_encart) !important;
-    font-size: 1.6rem !important;
-    font-weight: bold !important;
-    margin-bottom: 0.6rem !important;
-    margin-top: 1.2rem !important;
-}
-
-/* Titres H4 */
+/* Titres H1 à H4 */
+.styled-markdown h1,
+.styled-markdown h2,
+.styled-markdown h3,
 .styled-markdown h4 {
-    color: var(--color_text_on_background) !important;
-    font-size: 1.3rem !important;
-    font-weight: bold !important;
-    margin-bottom: 0.5rem !important;
-    margin-top: 1rem !important;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.styled-markdown h1 { 
+    color: var(--color_title);
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.styled-markdown h2 {
+    color: var(--color_title);
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.styled-markdown h3 {
+    color: var(--color_encart);
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.styled-markdown h4 {
+    color: var(--color_text_on_background);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Paragraphes */
 .styled-markdown p {
-    color: var(--color_text_on_background) !important;
-    font-size: 1.1rem !important;
-    line-height: 1.6 !important;
-    margin-bottom: 1rem !important;
-    text-align: justify !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    text-indent: 0;
+}
+
+/* Listes */
+.styled-markdown ul,
+.styled-markdown ol {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem; /* indentation des puces */
+}
+
+.styled-markdown li {
+    margin-bottom: 0.3rem;
+}
+
+/* Réinitialiser l’indentation du texte après les listes */
+.styled-markdown ul + *,
+.styled-markdown ol + * {
+    margin-left: 0;
+    text-indent: 0;
 }
 
 /* Citations de code */
 .styled-markdown code {
-    color: var(--color_title) !important;
-    background-color: rgba(27, 60, 83, 0.1) !important;
-    padding: 2px 6px !important;
-    border-radius: var(--small-radius) !important;
-    font-weight: bold !important;
-}
-
-/* Listes */
-.styled-markdown ul, .styled-markdown ol {
-    color: var(--color_text_on_background) !important;
-    margin-bottom: 1rem !important;
-    text-align: justify !important;
-}
-
-.styled-markdown li {
-    margin-bottom: 0.3rem !important;
-    text-align: justify !important;
+    color: var(--color_title);
+    background-color: rgba(27, 60, 83, 0.1);
+    padding: 2px 6px;
+    border-radius: var(--small-radius);
+    font-weight: bold;
 }
 
 /* Liens */
 .styled-markdown a {
-    color: var(--color_encart) !important;
-    text-decoration: underline !important;
+    color: var(--color_encart);
+    text-decoration: underline;
 }
 
 .styled-markdown a:hover {
-    color: var(--color_title) !important;
+    color: var(--color_title);
 }
 
 /* Texte en gras */
 .styled-markdown strong {
-    color: var(--color_title) !important;
-    font-weight: bold !important;
+    color: var(--color_title);
+    font-weight: bold;
 }
 
 /* Séparateurs */
 .styled-markdown hr {
-    border: none !important;
-    height: 2px !important;
-    background: linear-gradient(to right, var(--color_encart), transparent) !important;
-    margin: 2rem 0 !important;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--color_encart), transparent);
+    margin: 2rem 0;
 }
+
+

@@ -57,7 +57,7 @@ with col_content1:
     <div style="height: 5px;"></div>
     Je suis diplômé d'une école d'ingénieur généraliste avec une majeure en intelligence artificielle. Passionné par la logique de la programmation et fasciné par les possibilités qu'offre l'IA, je me suis naturellement orienté vers ce domaine innovant, au cœur des mutations technologiques actuelles.
     
-    Enrichie par une alternance chez RTE en tant que data scientist junior, ma spécialisation a porté sur mes deux dernières années d'études. J'y ai développé des compétences solides en machine learning, en traitement de données et en modélisation, à travers des projets concrets et à forte valeur ajoutée. (Voir la section Projets pour en savoir plus.)
+    Enrichie par une alternance chez RTE en tant que data scientist, ma spécialisation a porté sur mes deux dernières années d'études. J'y ai développé des compétences solides en machine learning, en traitement de données et en modélisation, à travers des projets concrets et à forte valeur ajoutée. (Voir la section Projets pour en savoir plus.)
     
     Côté tempérament, on me décrit comme quelqu'un de logique, rigoureux et ingénieux, capable de s'adapter à différents contextes. J'aime autant travailler en autonomie qu'en équipe, et je cherche toujours à équilibrer rigueur analytique et créativité dans ce que j'entreprends.
     

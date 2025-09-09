@@ -55,14 +55,23 @@ with col_content1:
     st.markdown("""
     <div class="text_on_background">
     <div style="height: 5px;"></div>
-    Je suis diplômé d'une école d'ingénieur généraliste avec une majeure en intelligence artificielle. Passionné par la logique de la programmation et fasciné par les possibilités qu'offre l'IA, je me suis naturellement orienté vers ce domaine innovant, au cœur des mutations technologiques actuelles.
-    
-    Enrichie par une alternance chez RTE en tant que data scientist, ma spécialisation a porté sur mes deux dernières années d'études. J'y ai développé des compétences solides en machine learning, en traitement de données et en modélisation, à travers des projets concrets et à forte valeur ajoutée. (Voir la section Projets pour en savoir plus.)
-    
-    Côté tempérament, on me décrit comme quelqu'un de logique, rigoureux et ingénieux, capable de s'adapter à différents contextes. J'aime autant travailler en autonomie qu'en équipe, et je cherche toujours à équilibrer rigueur analytique et créativité dans ce que j'entreprends.
-    
-    En dehors de l'IA, je cultive plusieurs centres d'intérêt : horlogerie, escalade, trek et production musicale. J'ai aussi fait dix ans de scoutisme, une expérience marquante qui a renforcé mon goût pour l'aventure, l'adaptation et le travail en équipe. Enfin, je suis actif dans une association dédiée au voyage, à la découverte et à la restauration du patrimoine.
-    
+    Diplômé d’une école d’ingénieur généraliste avec une majeure en Data et Intelligence Artificielle. 
+    <br>Ce qui me motive, c’est de pouvoir relier la logique de la programmation aux nombreuses perspectives qu’ouvre l’IA dans un monde en pleine mutation technologique.
+    <br><br>      
+    Durant mes deux dernières années d'études, j'ai forgé ma spécialisation en machine learning en développant des projets concrets, directement applicables à des problématiques d’entreprise (voir la section Projets pour en savoir plus).
+    <br>En parallèle, mon alternance chez RTE fut une immersion décisive dans le monde de la data science. J'y ai développé une expertise pratique en traitement et manipulation de données, au service de missions d'intérêt général.
+    <br><br>            
+    En dehors de mon parcours académique et professionnel, je cultive plusieurs passions qui façonnent ma manière de travailler et d’aborder les défis :
+
+    - **Escalade** : cette discipline m'apprend la maîtrise de soi face à la difficulté, l'adaptabilité et la logique pour identifier la meilleure approche.
+
+    - **Scoutisme** : dix années d'engagement m'ont permis de développer des compétences en leadership, ma débrouillardise et mon autonomie, tout en cultivant un fort esprit d'équipe.
+
+    - **Horlogerie** : une passion qui reflète mon appétence pour la rigueur, la précision et le souci du détail.
+
+    - **Production musicale (MAO)** : j'y cultive ma créativité et ma capacité à apprendre de manière autonome des outils complexes.
+
+    - **Engagement associatif** : membre actif d'une association de voyage et de restauration du patrimoine, je m'investis dans des projets collectifs porteurs de sens qui nourrissent ma curiosité.
     </div>
     """, unsafe_allow_html=True)
 
